@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(218, 219, 219);
+}
+header {
+  font-size: 48px;
+  font-weight: 900;
+  padding: 3%;
+}
+h1 {
+  font-size: 28px;
+  padding: 0 3%;
+}
+.list {
+  max-width: 85%;
+  background-color: #fff;
+  margin: 20px auto;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 4px rgba(118, 119, 119, 0.568);
+}
+
+.empty {
+  font-size: 20px;
+  margin: 20px auto;
+}
+.empty_img {
+  width: 30%;
+}
+.task_img {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(218, 219, 219);
+}
+.task_img:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px blue;
+}
+.tasks {
+  width: 95%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tasks li {
+  margin: 5px 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(218, 219, 219, 0.445);
+}
+.card {
+  max-width: 85%;
+  background-color: #fff;
+  margin: 20px auto;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px rgba(118, 119, 119, 0.568);
+  padding: 5%;
+}
+h2 {
+  width: 95%;
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+input {
+  width: 95%;
+  height: 30px;
+  padding: 2px;
+}
+small {
+  margin-bottom: 20px;
+  color: #0000008c;
+}
+.submit {
+  margin-top: 30px;
+  background-color: rgb(98, 153, 216);
+  color: #fff;
+  width: 15%;
+  height: 30px;
+  font-size: 17px;
+  border: 1px;
+  border-radius: 5px;
+}
+.submit:hover {
+  background-color: blue;
+}
+@media (max-width: 780px) {
+  .submit {
+    font-size: 12px;
+  }
+}
+.hidden {
+  display: none;
+}
+.red {
+  color: red;
+  font-weight: 900;
+}
+.task-title {
+  font-style: italic;
+  padding-left: 5px;
+}
+.done {
+  text-decoration: line-through;
+  opacity: 0.4;
+}

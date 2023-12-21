@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>To do list</header>
+      <h1>Список задач на сегодня</h1>
+      <section class="list">
+        <div class="empty">Список дел пуст</div>
+        <img src="/imgs/3.png" alt="empty" class="empty_img" />
+        <ul class="tasks"></ul>
+      </section>
+      <div class="card">
+        <h2>Добавить новую задачу</h2>
+        <hr />
+        <form id="form">
+          <small id="error">Какую задачу желаете добавить?</small>
+          <input type="text" placeholder="Текст задачи" id="input" />
+          <button type="submit" class="submit">Добавить</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
